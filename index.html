@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light position-fixed w-100">
+      <div class="container">
+        <a class="navbar-brand w-50" href="#"><img class="w-50" src="images/Peanutella-Logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars" style="font-size:2rem;"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">ABOUT</a>
+            <a class="nav-item nav-link" href="#">GALLERY</a>
+            <a class="nav-item nav-link" href="#">CONTACT</a></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-bg full-height" >
+    <div class="header-gradient">
+        <div class="container flex-row" >
+          <div class="full-height w-50 flex-column "  >
+                <p class="display-4 text-center font-italic text-white">"A Perfect Combination"</p>
+            <img src="images/Peanutella-Logo.png" class="img-fluid" alt="">
+
+                      <div class="container flex-column ">
+                      <div class="owl-carousel">
+                        <p class="lead font-weight-bold text-center font-italic ">"The Creaminess of the peanut compliments the bitternes of the Cacao"</p>
+                        <p class="lead text-center font-weight-bold font-italic">"Natural oil of cacao comes out after a week, which makes  it even more tastier. The more you keep, the more it taste!"</p>
+                      </div>
+                      </div>
+          </div>
+        </div>
+  
+
+
+    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="js/fullHeight.min.js" charset="utf-8"></script>
+    <script src="js/parallax.min.js" charset="utf-8"></script>
+    <script src="js/materialize.min.js" charset="utf-8"></script>
+    <script src="js/owl.carousel.min.js" charset="utf-8"></script>
+    <script src="js/wow.js" charset="utf-8"></script>
+    <script src="js/custom.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      new WOW().init();
+      $('.full-height').fullHeight();
+      $('.scrollspy').scrollSpy();
+      $('.collapse').collapse();
+      $('#myModal').modal();
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+          loop:true,
+margin:10,
+autoplay:true,
+autoplayTimeout:4000,
+autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:1
+              }
+          }
+      })
+
+    </script>
+  </body>
+</html>
