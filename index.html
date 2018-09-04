@@ -14,14 +14,14 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg bg-light position-fixed w-100">
+    <nav class="navbar navbar-expand-lg bg-light position-fixed w-100" style="z-index: 999;">
       <div class="container">
-        <a class="navbar-brand w-50" href="#"><img class="w-50" src="images/Peanutella-Logo.png" alt=""></a>
+        <a class="navbar-brand w-50" href="#"><img class="logo-width" src="images/Peanutella-Logo.png" alt="Peanutella Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars" style="font-size:2rem;"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav ml-3 ">
             <a class="nav-item nav-link active" href="#">HOME<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#">ABOUT</a>
             <a class="nav-item nav-link" href="#">GALLERY</a>
@@ -31,39 +31,49 @@
       </div>
     </nav>
 
-    <div class="header-bg full-height" >
-    <div class="header-gradient">
-        <div class="container flex-row" >
-          <div class="full-height w-50 flex-column "  >
-                <p class="display-4 text-center font-italic text-white">"A Perfect Combination"</p>
-            <img src="images/Peanutella-Logo.png" class="img-fluid" alt="">
 
-                      <div class="container flex-column ">
+    <div class="header-bg full-height ">
+    <div class="header-gradient full-height">
+        <div class="container flex-row" >
+          <div class="full-height width-100 flex-column  pt-3" >
+                <p class="display-4 text-center font-italic text-white wow fadeInDown" ">"A Perfect Combination"</p>
+            <img src="images/Peanutella-Logo.png" class="w-75 wow fadeInDown" js-tilt" data-tilt-axis="x" data-tilt-perspective="1000" data-tilt-scale="1" data-tilt-speed="400" data-tilt-max="10" data-wow-delay=".5s" style="margin-left: 13.55%; " alt="Peanutella">
+
+                      <div class="container flex-column wow fadeInRight" data-wow-delay="1s">
                       <div class="owl-carousel">
-                        <p class="lead font-weight-bold text-center font-italic ">"The Creaminess of the peanut compliments the bitternes of the Cacao"</p>
-                        <p class="lead text-center font-weight-bold font-italic">"Natural oil of cacao comes out after a week, which makes  it even more tastier. The more you keep, the more it taste!"</p>
+                        <p class="lead font-weight-bold text-center font-italic chocolate">"The Creaminess of the peanut compliments the bitternes of the Cacao"</p>
+                        <p class="lead text-center font-weight-bold font-italic chocolate">"Natural oil of cacao comes out after a week, which makes  it even more tastier. The more you keep, the more it taste!"</p>
                       </div>
                       </div>
+<div class=" flex-row wow fadeInUp" data-wow-delay="1.5s">
+                      <button class="btn bg-transparent border-white w-25 font-weight-bold " >BUY NOW</button>
+</div>
+
           </div>
         </div>
-  
+  </div>
+</div>
 
 
     <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/fullHeight.min.js" charset="utf-8"></script>
-    <script src="js/parallax.min.js" charset="utf-8"></script>
     <script src="js/materialize.min.js" charset="utf-8"></script>
     <script src="js/owl.carousel.min.js" charset="utf-8"></script>
     <script src="js/wow.js" charset="utf-8"></script>
     <script src="js/custom.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/tilt.jquery.js" charset="utf-8"></script>
+
 
     <script type="text/javascript">
+
       new WOW().init();
       $('.full-height').fullHeight();
       $('.scrollspy').scrollSpy();
-      $('.collapse').collapse();
+      $('.collapse').collapse('hide');
       $('#myModal').modal();
+      $('.js-tilt').tilt();
       $('.owl-carousel').owlCarousel({
           loop:true,
           margin:10,
@@ -84,7 +94,9 @@ autoplayHoverPause:true,
                   items:1
               }
           }
-      })
+      });
+      var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
 
     </script>
   </body>
